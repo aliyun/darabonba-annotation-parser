@@ -6,16 +6,16 @@
 [![David deps][david-image]][david-url]
 [![npm download][download-image]][download-url]
 
-[npm-image]: https://img.shields.io/npm/v/@darabonba/typescript-generator.svg?style=flat-square
-[npm-url]: https://npmjs.org/package/@darabonba/typescript-generator
-[travis-image]: https://img.shields.io/travis/aliyun/darabonba-typescript-generator.svg?style=flat-square
-[travis-url]: https://travis-ci.org/aliyun/darabonba-typescript-generator
-[cov-image]: https://codecov.io/gh/aliyun/darabonba-typescript-generator/branch/master/graph/badge.svg
-[cov-url]: https://codecov.io/gh/aliyun/darabonba-typescript-generator
-[david-image]: https://img.shields.io/david/aliyun/darabonba-typescript-generator.svg?style=flat-square
-[david-url]: https://david-dm.org/aliyun/darabonba-typescript-generator
-[download-image]: https://img.shields.io/npm/dm/@darabonba/typescript-generator.svg?style=flat-square
-[download-url]: https://npmjs.org/package/@darabonba/typescript-generator
+[npm-image]: https://img.shields.io/npm/v/@darabonba/annotation-parser.svg?style=flat-square
+[npm-url]: https://npmjs.org/package/@darabonba/annotation-parser
+[travis-image]: https://img.shields.io/travis/aliyun/darabonba-annotation-parser.svg?style=flat-square
+[travis-url]: https://travis-ci.org/aliyun/darabonba-annotation-parser
+[cov-image]: https://codecov.io/gh/aliyun/darabonba-annotation-parser/branch/master/graph/badge.svg
+[cov-url]: https://codecov.io/gh/aliyun/darabonba-annotation-parser
+[david-image]: https://img.shields.io/david/aliyun/darabonba-annotation-parser.svg?style=flat-square
+[david-url]: https://david-dm.org/aliyun/darabonba-annotation-parser
+[download-image]: https://img.shields.io/npm/dm/@darabonba/annotation-parser.svg?style=flat-square
+[download-url]: https://npmjs.org/package/@darabonba/annotation-parser
 
 ## 安装
 
