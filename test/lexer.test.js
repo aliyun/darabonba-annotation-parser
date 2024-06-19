@@ -388,6 +388,20 @@ describe('lexer', function () {
     ]);
   });
 
+  it('should ok with brackets in text', function () {
+    const anno = `/**
+     * @description [测试] 创建资源栈
+     */
+    `;
+    expect(lex(anno, '__filename')).to.be.eql([
+      { tag: 1 },
+      { tag: 4, typeName: 'description' },
+      { tag: 3, text: '[测试] 创建资源栈\n' },
+      { tag: 2 },
+      { tag: undefined }
+    ]);
+  });
+
   it('should throw when attribute name has invalid chars', function () {
     const anno = `/**
      * @description[&locale=zh_CN] 创建资源栈

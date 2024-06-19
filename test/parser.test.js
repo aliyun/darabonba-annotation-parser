@@ -163,6 +163,47 @@ describe('parser', function () {
     });
   });
 
+  it('bracket in text should ok', function () {
+    const anno = `/**
+     * @summary[locale=zh_CN] 创建资源栈
+     * @summary [资源]创建资源栈
+     */
+    `;
+    const ast = parse(anno, '__filename');
+    expect(ast).to.be.eql({
+      'items': [
+        {
+          'text': {
+            'tag': 3,
+            'text': '创建资源栈\n'
+          },
+          'attrs': [
+            {
+              'name': {
+                'id': 'locale',
+                'tag': 5
+              },
+              'value': {
+                'id': 'zh_CN',
+                'tag': 5
+              }
+            }],
+          'type': 'summary'
+        },
+        {
+          'text': {
+            'tag': 3,
+            'text': '[资源]创建资源栈\n'
+          },
+          'attrs': [],
+          'type': 'summary'
+        }
+      ],
+      'type': 'annotation'
+    });
+  });
+
+
   it('should ok with lang/locale', function () {
     const anno = `/**
      * @description[locale=zh_CN] 创建资源栈
