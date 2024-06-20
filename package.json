@@ -19,7 +19,7 @@
   "scripts": {
     "lint": "eslint --fix lib test *.js",
     "test": "mocha -R spec test/*.test.js",
-    "test-cov": "nyc --reporter=html --reporter=text mocha -R spec test/*.test.js",
+    "test-cov": "nyc -r=lcov -r=html -r=text npm run test",
     "ci": "npm run lint && npm run test-cov"
   },
   "repository": {
